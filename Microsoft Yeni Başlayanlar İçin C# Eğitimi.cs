@@ -27,6 +27,11 @@ Console.WriteLine(Hello);
 Hello = Hello.Replace("Hello", "Greetings");
 Console.WriteLine(Hello); // String içindeki kelimeyi değiştirme
 
+string Hello = "Hello World!";
+Console.WriteLine(Hello.ToUpper());
+Console.WriteLine(Hello.ToLower()); // Stringin tüm karakterlerini büyük veya Küçük yapmak
+
+
 
 
 
