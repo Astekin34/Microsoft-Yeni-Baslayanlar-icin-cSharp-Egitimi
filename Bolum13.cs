@@ -1,3 +1,4 @@
+// Diziler, Listeler ve Dizi oluşturma
 var names = new string[] {"Scott", "Ana", "Felipe"};
         names = names.Concat(new string[] {"Damian"}).ToArray(); // diziye kodla eleman ekleme
         

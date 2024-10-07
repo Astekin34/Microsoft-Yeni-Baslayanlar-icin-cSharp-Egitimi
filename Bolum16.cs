@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+//LINQ sorgu ifadeleri From, Where, Orderby ve Select
+
 List<int> scores = new List<int> { 3, 45, 100, 97, 92, 81, 60 };
 IEnumerable<string> scoreQuery = 
     from score in scores

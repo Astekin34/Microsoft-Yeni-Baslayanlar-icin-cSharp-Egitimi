@@ -1,6 +1,7 @@
 using Systems;
 using Systems.Linq;
 
+// Nesne Odaklı Programlama (OOP)
 var p1 = new person("Scott", "Hanselman", new Dateonly(1970,1,1));
 var p2 = new person("David", "Howler", new Dateonly(1970,1,1));
 
@@ -15,3 +16,4 @@ public class Person
     public string Last { get; } = lastname;
     public DateOnly Birthday { get; } = birthday;
   } 
+}

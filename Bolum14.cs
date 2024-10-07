@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+
+// Listeleri sıralama ve arama
 var names = new List<string>{ "Scott", "Ana", "Felipe" };
 names.Sort();
 foreach (var name in names){

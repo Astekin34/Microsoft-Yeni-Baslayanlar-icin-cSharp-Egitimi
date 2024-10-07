@@ -1,3 +1,4 @@
+// Sayılar, Tam sayılar ve Matematik
 int a = 18;
 int b = 6;
 int c = a + b;
