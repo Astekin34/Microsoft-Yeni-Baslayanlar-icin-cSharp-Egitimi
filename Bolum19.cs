@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 
 Console.WriteLine("Hello OOP");
-var p1 = new Person("Scott", "Hansel", new DateOnly(1970, 1, 1));
-var p2 = new Person("David", "Howler", new DateOnly(1986, 1, 1));
+var p1 = new Person("Scott", "Hansel", new DateTime(1970, 1, 1));
+var p2 = new Person("David", "Howler", new DateTime(1986, 1, 1));
 
 p1.Pets.Add(new Dog("Fred"));
 p1.Pets.Add(new Dog("Barney"));
@@ -24,11 +24,11 @@ public class Person
 {
     public string First { get; }
     public string Last { get; }
-    public DateOnly Birthday { get; }
+    public DateTime Birthday { get; }
 
     public List<Pet> Pets { get; } = new();
 
-    public Person(string firstname, string lastname, DateOnly birthday)
+    public Person(string firstname, string lastname, DateTime birthday)
     {
         First = firstname;
         Last = lastname;
@@ -60,14 +60,14 @@ public abstract class Pet
 
 public class Cat : Pet
 {
-    public Cat(string firstname) : base(firstname) {}
+    public Cat(string firstname) : base(firstname) { }
 
     public override string MakeNoise() => "meow";
 }
 
 public class Dog : Pet
 {
-    public Dog(string firstname) : base(firstname) {}
+    public Dog(string firstname) : base(firstname) { }
 
     public override string MakeNoise() => "bark";
 }
