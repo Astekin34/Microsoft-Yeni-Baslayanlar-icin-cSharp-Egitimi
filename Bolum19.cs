@@ -16,7 +16,7 @@ foreach (var person in people)
     Console.WriteLine($"{person}");
     foreach (var pet in person.Pets)
     {
-        Console.WriteLine($"    {pet} says: {pet.MakeNoise()}");
+        Console.WriteLine($"    {pet}");
     }
 }
 
@@ -54,7 +54,7 @@ public abstract class Pet
 
     public override string ToString()
     {
-        return $"{First}, and I am a {GetType().Name}";
+        return $"{First}, and I am a {GetType().Name} and I {MakeNoise()}";
     }
 }
 
